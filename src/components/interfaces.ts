@@ -6,4 +6,5 @@ export interface ITodoItemProps {
 
 export interface IButtonProps {
   style?: any;
+  todoId: string;
 }

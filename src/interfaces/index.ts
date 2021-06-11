@@ -5,7 +5,7 @@ export interface IRoot {
 
 //TODO
 export interface ITodo {
-  id: number;
+  id: string;
   description: string;
   completed: boolean;
 }

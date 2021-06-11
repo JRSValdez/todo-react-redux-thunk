@@ -1,15 +1,20 @@
 import React from "react";
-import { IRoot } from "../interfaces";
-import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { completeTodo } from "../redux/actions/todosActions";
 
 import { IButtonProps } from "./interfaces";
 
-const CompleteButton = ({ style }: IButtonProps) => {
-  const todosState = useSelector((state: IRoot) => state.todos);
+const CompleteButton = ({ style, todoId }: IButtonProps) => {
+  const dispatch = useDispatch();
 
+  const handleCompleteTodo = () => {
+    dispatch(completeTodo(todoId));
+  };
   return (
     <div style={{ ...style }}>
-      <button className="btn btn-info">Complete</button>
+      <button onClick={handleCompleteTodo} className="btn btn-info">
+        Complete
+      </button>
     </div>
   );
 };
