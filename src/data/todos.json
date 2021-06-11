@@ -1,0 +1,39 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "description": "Todo description #1",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "description": "Todo description #2",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "description": "Todo description #3",
+      "completed": true
+    },
+    {
+      "id": 4,
+      "description": "Todo description #4",
+      "completed": false
+    },
+    {
+      "id": 5,
+      "description": "Todo description #5",
+      "completed": false
+    },
+    {
+      "id": 6,
+      "description": "Todo description #6",
+      "completed": true
+    },
+    {
+      "id": 7,
+      "description": "Todo description #7",
+      "completed": true
+    }
+  ]
+}
